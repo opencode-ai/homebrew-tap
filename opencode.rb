@@ -5,20 +5,20 @@
 class Opencode < Formula
   desc ""
   homepage ""
-  version "0.0.26"
+  version "0.0.27"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/opencode-ai/opencode/releases/download/v0.0.26/opencode-mac-x86_64.tar.gz"
-      sha256 "7c3c9bd66cb46a84b1ef2f2c507742968724d025400f90df2b898299b195b414"
+      url "https://github.com/opencode-ai/opencode/releases/download/v0.0.27/opencode-mac-x86_64.tar.gz"
+      sha256 "4d664ea46c3313c24d5123d285ff3dfa174f48f1fc09cdd1df31a9b941731bfd"
 
       def install
         bin.install "opencode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/opencode-ai/opencode/releases/download/v0.0.26/opencode-mac-arm64.tar.gz"
-      sha256 "dedb8dbdbc5c95f6bf3921e3c5dd2c613bb4e74c267863ad46328bcb8911481f"
+      url "https://github.com/opencode-ai/opencode/releases/download/v0.0.27/opencode-mac-arm64.tar.gz"
+      sha256 "a387cb46826750322ac7466b096917b2c389f6a55ebd0e94614bac3243bc88ac"
 
       def install
         bin.install "opencode"
@@ -29,8 +29,8 @@ class Opencode < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/opencode-ai/opencode/releases/download/v0.0.26/opencode-linux-x86_64.tar.gz"
-        sha256 "8157b13ef79dcd457701245ed2dce26343663506fc6afbd6d5ad594ca62eb757"
+        url "https://github.com/opencode-ai/opencode/releases/download/v0.0.27/opencode-linux-x86_64.tar.gz"
+        sha256 "a8d1b254e7da61912f14216468af9826a9def54a3627d2ea964e3b279a028217"
 
         def install
           bin.install "opencode"
@@ -39,8 +39,8 @@ class Opencode < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/opencode-ai/opencode/releases/download/v0.0.26/opencode-linux-arm64.tar.gz"
-        sha256 "4f6e12752e3d2a9b4e130f2634796f6e2c5b5205cfc5cce8222fcef2e215e537"
+        url "https://github.com/opencode-ai/opencode/releases/download/v0.0.27/opencode-linux-arm64.tar.gz"
+        sha256 "f398de945a0d06cb778d9f48712840193f192063cb82a6f8414548ddac11e794"
 
         def install
           bin.install "opencode"
