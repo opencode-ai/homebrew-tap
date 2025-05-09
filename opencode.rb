@@ -5,20 +5,20 @@
 class Opencode < Formula
   desc ""
   homepage ""
-  version "0.0.42"
+  version "0.0.43"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/opencode-ai/opencode/releases/download/v0.0.42/opencode-mac-x86_64.tar.gz"
-      sha256 "ac686bc743cf03643a8d1b8da1937c38da23554054b7da95c54e22a745801e05"
+      url "https://github.com/opencode-ai/opencode/releases/download/v0.0.43/opencode-mac-x86_64.tar.gz"
+      sha256 "437bb86b6c4d6440df032067c122efafc9c2cb963a4d60512d878f6977d16b74"
 
       def install
         bin.install "opencode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/opencode-ai/opencode/releases/download/v0.0.42/opencode-mac-arm64.tar.gz"
-      sha256 "2f0d23eab648f7f41d20151d6c5a31816315b2f95dfe4aafeb81f7d09e75fbc9"
+      url "https://github.com/opencode-ai/opencode/releases/download/v0.0.43/opencode-mac-arm64.tar.gz"
+      sha256 "a45ae2b6caa94db4822825d995f15e5e18438a31fbf0140612e9ed50ebc88e33"
 
       def install
         bin.install "opencode"
@@ -28,15 +28,15 @@ class Opencode < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/opencode-ai/opencode/releases/download/v0.0.42/opencode-linux-x86_64.tar.gz"
-      sha256 "1ae11b16563341fe75fbe19b14374fdd9e90a2b9e407fafe28a982fc3a2e27e6"
+      url "https://github.com/opencode-ai/opencode/releases/download/v0.0.43/opencode-linux-x86_64.tar.gz"
+      sha256 "81a71f71ff8bd9e539106f52d94621707e64c739653f249c5f0bf2faa99b5bb5"
       def install
         bin.install "opencode"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/opencode-ai/opencode/releases/download/v0.0.42/opencode-linux-arm64.tar.gz"
-      sha256 "85213e6c4f8e9eb1fa55c83885c7d6ea74ee6048178fe23f6bded5fe79347d5e"
+      url "https://github.com/opencode-ai/opencode/releases/download/v0.0.43/opencode-linux-arm64.tar.gz"
+      sha256 "0e570b0973469f52626166960ff7593aea7fce3b3a6d068a897e194574e400c5"
       def install
         bin.install "opencode"
       end
